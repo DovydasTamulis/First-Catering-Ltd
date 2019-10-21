@@ -49,7 +49,7 @@
     width:100vw;
     z-index:1;
     background:#225470;
-    opacity:0.85;
+    opacity:0.25;
   }
   
   .header-content{
@@ -68,13 +68,17 @@
   }
   
   .btn{
-    background: #34b3a0;
     color:#fff;
+    background:#f78f3d;
+    border:1px solid transparent;
     font-size:1.2rem;
     padding: 1rem 2rem;
-    text-decoration: none;
   }
-  
+  .btn.primary:hover{
+    color:#f78f3d;
+    border:1px solid #f78f3d;
+    background:#fff
+}
   .section{
     padding:20px 0;
   }
@@ -90,3 +94,91 @@
       padding-left:3rem;
     }
   }
+
+
+  .p1-gradient-bg,.primary-btn,.convert-wrap,.callaction-area,.single-price:hover .price-bottom,.single-footer-widget .navbar-form .genric-btn{
+    background-image:-moz-linear-gradient(0deg, '#f3c400' 0%, #f88845 100%);
+    background-image:-webkit-linear-gradient(0deg, #f3c400 0%, #f88845 100%);
+    background-image:-ms-linear-gradient(0deg, #f3c400 0%, #f88845 100%)
+}
+.p1-gradient-color{
+    background:-moz-linear-gradient(0deg, #f3c400 0%, #f88845 100%);
+    background:-webkit-linear-gradient(0deg, #f3c400 0%, #f88845 100%);
+    background:-ms-linear-gradient(0deg, #f3c400 0%, #f88845 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.primary-btn{
+    line-height:42px;
+    padding-left:30px;
+    padding-right:60px;
+    border-radius:25px;
+    border:none;
+    color:black;
+    display:inline-block;
+    font-weight:500;
+    position:relative;
+    -webkit-transition:all 0.3s ease 0s;
+    -moz-transition:all 0.3s ease 0s;
+    -o-transition:all 0.3s ease 0s;
+    transition:all 0.3s ease 0s;
+    cursor:pointer;
+    text-transform:uppercase;
+    position:relative
+}
+.primary-btn:focus{
+    outline:none
+}
+.primary-btn span{
+    color:black;
+    position:absolute;
+    top:50%;
+    transform:translateY(-60%);
+    right:30px;
+    -webkit-transition:all 0.3s ease 0s;
+    -moz-transition:all 0.3s ease 0s;
+    -o-transition:all 0.3s ease 0s;
+    transition:all 0.3s ease 0s
+}
+.primary-btn:hover{
+    color:black;
+}
+.primary-btn:hover span{
+    color:black;
+    right:20px
+}
+.primary-btn.white{
+    border:1px solid black;
+    color:black
+}
+.primary-btn.white span{
+    color:black
+}
+.primary-btn.white:hover{
+    background:#fff;
+    color:#f78f3d
+}
+.primary-btn.white:hover span{
+    color:#f78f3d
+}
+.banner-area .primary-btn{
+  padding-left:40px;
+  padding-right:40px;
+  border-radius:3px
+}
+.banner-area .overlay-bg{
+  background-color:rgba(4,9,30,0.85)
+}
+.banner-content{
+  text-align:center
+}
+.header-btn{
+  background-color:#f78f3d;
+  border:1px solid transparent;
+  color:#fff
+}
+.header-btn:hover{
+  border:1px solid black;
+  background:transparent;
+  color:orange
+}
