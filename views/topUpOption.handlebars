@@ -1,0 +1,48 @@
+<header>
+
+		<link rel="stylesheet" href="/css/option.css"/>
+
+
+</header>
+
+<body>
+
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">
+							{{!-- <h1 class="text-uppercase">
+								Top up with £{{option.number}}			
+							</h1> --}}
+							
+
+
+							<h1 >{{option.description}}</h1>
+
+                        <h2 class="text-white pt-20 pb-20">
+							Confirm the last 4 values of your credit card                       
+ 						</h2>
+              
+                     
+                            <form method="POST" accept-charset="/dashboard/topup/option/{{option.id}}">
+								   <h2 class="text-white pt-20 pb-20">
+                                <input type="text" class="form-control"  name="inputCardCreds">
+								
+                       		 </h2>
+
+
+							<button type="submit" class="primary-btn header-btn text-uppercase" >Confirm Transaction</button>    
+
+							<a href="/dashboard/topup" class="primary-btn header-btn text-uppercase">Cancel</a>
+
+							</form> 
+
+						</div>												
+					</div>
+				</div>
+			
+            </section>
+                
+
+</body>

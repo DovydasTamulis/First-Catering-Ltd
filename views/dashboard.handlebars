@@ -1,0 +1,57 @@
+<head>
+
+<link rel="stylesheet" href="/css/dashboard.css"/>
+
+</head>
+
+<body >
+     
+        <section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">
+                            <h1 "text-black">Welcome {{user.firstName}}</h1>
+                            <h2 class="text-white text-uppercase">E-Card ID: {{user.ecardID}} </h2>
+							<h5 class="text-white text-uppercase">E-Card Balance:</h5>
+                            <h1 type="number", >
+								£{{user.balance}}
+							</h1>
+
+						</div>												
+					</div>
+				</div>
+			</section>
+
+<!-- Start simple-services Area -->
+			<section class="simple-services-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 single-services">
+							<a href="/dashboard/topup"><img src="topupicon.png"></a>
+							<a href="/dashboard/topup"><h4 class="pt-30 pb-20">Top up your E-Card</h4></a>
+							<p>
+								Top up your E-Card here.
+							</p>
+						</div>
+						<div class="col-lg-4 single-services">
+							<a href="/buy"><img src="buy.png"></a>
+							<a href="/buy"><h4 class="pt-30 pb-20" >Menu</h4></a>
+							<p>
+								Chose your meals and pay for them here.
+							</p>
+						</div>		
+						<div class="col-lg-4 single-services">
+							<a href="/dashboard/info"><img src="profile.png"></a>
+							<a href="/dashboard/info"><h4 class="pt-30 pb-20">Basic user information</h4></a>
+							<p>
+								View personal details.
+							</p>
+						</div>									
+					</div>
+				</div>	
+			</section>
+			<!-- End simple-services Area -->
+
+</body>
+

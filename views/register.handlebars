@@ -1,0 +1,66 @@
+
+<header>
+    		<link rel="stylesheet" href="/css/register.css"/>
+</header>
+
+<body>
+
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+ {{/if}}
+		<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1 class="text">
+								Register			
+							</h1>
+						</div>												
+					</div>
+				</div>
+			</section>
+
+			<section class="simple-services-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 single-services">
+						</div>
+                        <form method="POST" accept-charset="/users/register">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" placeholder="firstName" name="firstName">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" placeholder="lastName" name="lastName">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" placeholder="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" class="form-control" placeholder="phoneNumber" name="phoneNumber">
+                            </div>
+                            <div class="form-group">
+                                <label>E-Card ID (16 Aplpha Numeric Value)</label>
+                                <input type="text" class="form-control" placeholder="E-Card ID Number" name="ecardID">
+                            </div>
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <input type="text" class="form-control" placeholder="Last 4 digest of your card" name="cardCreds">
+                            </div>   
+                                <button type="submit" class="primary-btn header-btn text-uppercase">Register</button>
+                        </form>
+					</div>
+				</div>	
+			</section>
+
+</body>
+
+
+
+

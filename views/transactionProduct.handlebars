@@ -1,0 +1,67 @@
+<header>
+    		<link rel="stylesheet" href="/css/transaction.css"/>
+
+
+
+
+</header>
+
+<body>
+
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+ {{/if}}
+<!-- Signature Dish -->
+
+	<div class="sig">
+		<div class="sig_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="sig_content">
+							{{!-- <div class="sig_subtitle page_subtitle">Conformation:</div> --}}
+							<div class="sig_title"><h1>{{product.productName}}</h1></div>
+							<div class="rating_r sig_rating rating_r_5"><i></i><i></i><i></i><i></i><i></i></div>
+							<div class="sig_name_container d-flex flex-row align-items-start justify-content-start">
+								<div class="sig_name">{{product.description}}</div>
+								<div class="sig_price ml-auto">£{{product.price}}</div>
+							</div>
+							<div class="sig_content_list">
+								<ul class="d-flex flex-row align-items-center justify-content-start">
+
+								</ul>
+							</div>
+							<div class="button sig_button trans_200"><a href="/transactionProduct/{{product._id}}/confirm">Buy Now</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sig_image_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 offset-lg-5">
+						<div class="sig_image">
+
+							<div class="background_image" style="background-image:url({{product.productImage}})"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Menu -->
+
+
+</body>
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+
+<header>
+   
+		<link rel="stylesheet" href="/css/login.css"/>
+
+
+
+</header>
+
+<body>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+ {{/if}}
+
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1 class="text">
+								Login			
+							</h1>
+						</div>												
+					</div>
+				</div>
+			</section>
+
+
+<!-- Start simple-services Area -->
+
+			<section class="simple-services-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 single-services">
+
+						</div>		
+
+                        <form method="POST" accept-charset="/users/login">
+                                <div class="form-group">
+                                    <label for="ecardID">E-Card ID (16 Aplpha Numeric Value)</label>
+                                    <input type="ecardID" 
+                                    class="form-control" 
+                                    placeholder="ecardID" 
+                                    name="ecardID"
+                                    ></div>
+                                <button type="submit" class="primary-btn header-btn text-uppercase">Login</button>
+                        </form>										
+					</div>
+				</div>	
+			</section>
+
+
+
+
+</body>
