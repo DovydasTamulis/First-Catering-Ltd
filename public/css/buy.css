@@ -5,6 +5,7 @@
     font-family: Verdana, sans-serif;
      margin:0
 }
+
  .mySlides {
     display: none
 }
@@ -2434,4 +2435,3 @@ body.mobile-nav-active #mobile-nav-toggle{
 .switch-wrap p{
     margin:0
 }
- 

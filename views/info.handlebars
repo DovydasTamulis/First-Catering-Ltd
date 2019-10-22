@@ -1,13 +1,58 @@
        <header>
  
 		<link rel="stylesheet" href="/css/info.css"/>
+
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
        </header>
 
 	   <body>
 
-				<div class="section-top-border">
-						<h3 class="mb-30">Personal Information:</h3>
-						<div class="progress-table-wrap ">
+		
+
+
+		<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">				
+								<h1 class="mb-30" >Personal Information</h1>
+
+									<div class="row">
+										<div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
+											<div class="Balance">
+												<p class="counter-count">{{user.balance}}</p>
+												<p class="employee-p">Balance</p>
+												  
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
+											<div class="Topups">
+												<p class="counter-count">12</p>
+												<p class="order-p">Topups</p>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
+											<div class="Orders">
+												<p class="counter-count">25</p>
+												<p class="order-p">Orders</p>
+											</div>
+										</div>
+
+										
+									
+							</div>
+						</div>												
+					</div>
+				</div>
+			</section>
+
+					<div class="container">
+						<div class="row">
+						<div class="section-top-border">
+							<div class="progress-table-wrap ">
 							<div class="progress-table">
 								<div class="table-head">
 									<div class="serial">#</div>
@@ -47,6 +92,25 @@
 			  				</div>
         				 </div>
 					 </div>
+				 </div>
+			 </div>
+
+
+<script>
+	$('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+
+</script>
+
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
@@ -55,4 +119,6 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
 </script>
-				 </body>
+
+
+</body>

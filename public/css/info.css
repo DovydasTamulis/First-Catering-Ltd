@@ -7,7 +7,7 @@
     color:#fff
 }
 ::-webkit-input-placeholder{
-    color:#777777;
+    color:#f78f3d;
     font-weight:300
 }
 :-moz-placeholder{
@@ -16,7 +16,7 @@
     font-weight:300
 }
 ::-moz-placeholder{
-    color:#777777;
+    color:#f78f3d;
     opacity:1;
     font-weight:300
 }
@@ -270,7 +270,8 @@ td,th{
     margin-bottom:25px
 }
 .mb-30{
-    margin-bottom:30px
+    margin-bottom:30px;
+    color: white;
 }
 .mb-40{
     margin-bottom:40px
@@ -2340,11 +2341,12 @@ body.mobile-nav-active #mobile-nav-toggle{
 }
 .counter-count
 {
+
     font-size: 18px;
-    background-color: #00b3e7;
+    color:#fff;
+    background:#f78f3d;    
     border-radius: 50%;
     position: relative;
-    color: #ffffff;
     text-align: center;
     line-height: 92px;
     width: 92px;
@@ -2359,6 +2361,6 @@ body.mobile-nav-active #mobile-nav-toggle{
 .employee-p,.customer-p,.order-p,.design-p
 {
     font-size: 24px;
-    color: #000000;
+    color:#fff;
     line-height: 34px;
 }

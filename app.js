@@ -14,23 +14,12 @@ const app = express();
 // Passport Config
 require('./config/passport')(passport);
 
-// DB Config
-const db = require('./config/keys');
-
 // Connect to MongoDB
 mongoose
   .connect('mongodb://admin:'+ 'admin' +'@ecardcluster-shard-00-00-nkjuw.mongodb.net:27017,ecardcluster-shard-00-01-nkjuw.mongodb.net:27017,ecardcluster-shard-00-02-nkjuw.mongodb.net:27017/test?ssl=true&replicaSet=ECardCluster-shard-0&authSource=admin&retryWrites=true')
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
-
-  var routes = require('./routes/index');
-  var users = require('./routes/users');
-  var products = require('./routes/products');
-  var topups = require('./routes/topups');
-
-
-  
 // Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
@@ -76,11 +65,6 @@ app.use(passport.session());
   
   //Connet Flash
   app.use(flash());
-
-
-
-
-
 
   
   //Global vars
