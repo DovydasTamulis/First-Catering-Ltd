@@ -51,9 +51,9 @@ router.post('/register',function(req, res){
                   if(cardCreds.length != 4){
                     req.flash('error_msg', 'Card credentials length does not match criteria ' + req.body.cardCreds.length);
                     res.redirect('/users/register',);
-                  }else if(typeof icardCreds != "number"){
-                    req.flash('error_msg', 'Card credentials entered is not a number ' + req.body.cardCreds);
-                    res.redirect('/users/register',);
+                  // }else if(typeof icardCreds != "number"){
+                    // req.flash('error_msg', 'Card credentials entered is not a number ' + req.body.cardCreds);
+                    // res.redirect('/users/register',);
                   }
                   
                   User.find({email: req.body.email}).then(resultEmail =>{

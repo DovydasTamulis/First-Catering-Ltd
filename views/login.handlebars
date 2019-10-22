@@ -1,7 +1,7 @@
 
 <header>
    
-		<link rel="stylesheet" href="/css/login.css"/>
+    		<link rel="stylesheet" href="/css/register.css"/>
 
 
 
@@ -13,6 +13,8 @@
         <div class="alert alert-danger">{{msg}}</div>
     {{/each}}
  {{/if}}
+
+
 
 			<section class="banner-area relative" id="home">
 				<div class="overlay overlay-bg"></div>		
@@ -44,6 +46,7 @@
                                     class="form-control" 
                                     placeholder="ecardID" 
                                     name="ecardID"
+									maxlength = "16"
                                     ></div>
                                 <button type="submit" class="primary-btn header-btn text-uppercase">Login</button>
                         </form>										
@@ -53,5 +56,12 @@
 
 
 
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
 
 </body>

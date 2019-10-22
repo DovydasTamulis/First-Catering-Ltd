@@ -28,7 +28,7 @@
 					<div class="row">
 						<div class="col-lg-4 single-services">
 						</div>
-                        <form method="POST" accept-charset="/users/register">
+                        <form name="register" method="POST" onsubmit="return checkInp()"  accept-charset="/users/register" >
                             <div class="form-group">
                                 <label>First Name</label>
                                 <input type="text" class="form-control" placeholder="firstName" name="firstName">
@@ -43,15 +43,15 @@
                             </div>
                             <div class="form-group">
                                 <label>Phone Number</label>
-                                <input type="text" class="form-control" placeholder="phoneNumber" name="phoneNumber">
+                                <input type="text" class="form-control" placeholder="Phone Number" name="phoneNumber">
                             </div>
                             <div class="form-group">
                                 <label>E-Card ID (16 Aplpha Numeric Value)</label>
-                                <input type="text" class="form-control" placeholder="E-Card ID Number" name="ecardID">
+                                <input type="text"  maxlength = "16" class="form-control" placeholder="E-Card ID Number" name="ecardID">
                             </div>
-                            <div class="form-group">
+                             <div class="form-group">
                                 <label>Card Number</label>
-                                <input type="text" class="form-control" placeholder="Last 4 digest of your card" name="cardCreds">
+                                <input type="password" maxlength = "4" class="form-control" placeholder="Last 4 digits of your card" name="cardCreds" value="">
                             </div>   
                                 <button type="submit" class="primary-btn header-btn text-uppercase">Register</button>
                         </form>
@@ -59,8 +59,25 @@
 				</div>	
 			</section>
 
+        <script>
+                function checkInp()
+                {
+                    var x=document.forms["register"]["cardCreds"].value;
+                    if ((x%1) != 0) 
+                    {
+                        alert("Card Number can only contain numbers");
+                        return false;
+                    }
+                }
+
+
+
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
 </body>
-
-
-
-
