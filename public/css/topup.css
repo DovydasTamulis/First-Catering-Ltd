@@ -2116,10 +2116,10 @@ body.mobile-nav-active #mobile-nav-toggle{
     font-weight:300
 }
 .single-price .price-bottom h1 span{
-    font-size:25px;
-    margin-top:-14px;
+    font-size:20px;
+    margin-top:-25px;
     position:absolute;
-    margin-left:-20px
+    margin-left:-35px
 }
 .single-price .price-bottom .primary-btn{
     margin-top:20px;
@@ -2335,4 +2335,3 @@ body.mobile-nav-active #mobile-nav-toggle{
 .switch-wrap p{
     margin:0
 }
- 
