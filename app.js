@@ -101,6 +101,6 @@ app.use('/topups', require('./routes/topups.js'));
 const PORT = process.env.PORT || 3000;
 // const SecondTerminal = process.env.PORT1 || 5001;
 
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+app.listen(PORT, console.log(`Server started on port  http://localhost:${PORT}`));
 
 // app.listen(SecondTerminal, console.log(`Server started on port ${SecondTerminal}`));
