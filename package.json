@@ -17,7 +17,7 @@
     "connect-flash": "*",
     "cookie-parser": "*",
     "dateformat": "^3.0.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "express-handlebars": "*",
     "express-messages": "*",
