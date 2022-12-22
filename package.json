@@ -23,7 +23,7 @@
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
-    "jsonwebtoken": "^8.5.0",
+    "jsonwebtoken": "^9.0.0",
     "mongodb": "*",
     "mongoose": "^5.4.14",
     "morgan": "^1.9.1",
